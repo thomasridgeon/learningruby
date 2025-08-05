@@ -35,6 +35,8 @@ puts "Let's see how many leap years there are between #{start_year_to_display} a
 leap_year_count = 0
 leap_years = [] 
 (start_year_to_display..end_year_to_display).each do |year|
+  #.. (two dots) creates an inclusive range. This means the range includes both the starting and ending values ... (three dots) creates an exclusive range. This means the range includes the starting value but excludes the ending value.
+  #Translating into English, the .each do |year| says: For each object in this range, point the variable year to the object and then do everything I tell you to, until you come to the end.
   if (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)
     leap_year_count = leap_year_count + 1 
 #or the shorthand way to write this would be leap_year_count += 1
