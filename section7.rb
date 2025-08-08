@@ -14,6 +14,7 @@ puts "what about #{name}? yes/no"
 user_response0 = gets.chomp
 if user_response0.downcase == "yes"
   birthdayppl << name
+  #The shovel operator is best used for adding one specific object at a time. It works for adding various data types, including numbers, strings, or even other arrays, but it always treats the item on its right side as a single element.
   puts "yay!"
 else 
   puts "okay"
