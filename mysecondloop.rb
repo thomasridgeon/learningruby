@@ -1,6 +1,7 @@
 puts "HEY SONNY HOW ARE YOU?"
 user_response = ""
 until user_response == user_response.upcase && !user_response.empty?
+  #In Ruby, the ! symbol is a logical NOT operator. It's used to negate a boolean value, so it turns true into false and false into true.
   user_response = gets.chomp
   if user_response != user_response.upcase 
     granny_response = "WHAT'S THAT SONNY?! YOU NEED TO SPEAK UP"
